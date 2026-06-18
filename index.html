@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李红领 — 地球物理与人工智能工程师</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+            background: #f0f2f5;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+        header {
+            background: linear-gradient(135deg, #1a3a4a 0%, #2c5f7c 50%, #3a7ca5 100%);
+            color: #fff;
+            padding: 48px 0 40px;
+        }
+        .header-inner { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+        .avatar {
+            width: 130px; height: 160px; border-radius: 6px;
+            object-fit: cover; border: 3px solid rgba(255,255,255,.4); flex-shrink: 0;
+        }
+        .header-text h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 6px; }
+        .header-text .subtitle { font-size: 1rem; opacity: .85; margin-bottom: 8px; }
+        .header-text .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { background: rgba(255,255,255,.18); padding: 4px 14px; border-radius: 20px; font-size: .85rem; }
+        main { padding: 32px 0 48px; display: flex; flex-direction: column; gap: 24px; }
+        .card {
+            background: #fff; border-radius: 8px; padding: 28px 32px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.06);
+        }
+        .card h2 {
+            font-size: 1.15rem; color: #1a3a4a;
+            border-left: 3px solid #3a7ca5; padding-left: 10px; margin-bottom: 18px;
+        }
+        .about p { font-size: .95rem; color: #4a5568; text-indent: 2em; }
+        .timeline { position: relative; }
+        .timeline::before { content: ""; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: #d1d9e0; }
+        .tl-item { position: relative; padding-left: 28px; margin-bottom: 14px; }
+        .tl-item::before {
+            content: ""; position: absolute; left: 2px; top: 8px;
+            width: 14px; height: 14px; border-radius: 50%;
+            background: #3a7ca5; border: 2px solid #fff; box-shadow: 0 0 0 2px #3a7ca5;
+        }
+        .tl-time { font-size: .8rem; color: #718096; margin-bottom: 2px; }
+        .tl-desc { font-size: .93rem; }
+        .proj-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px 24px; }
+        .proj-item { font-size: .88rem; padding: 10px 14px; background: #f7f9fb; border-radius: 5px; border-left: 3px solid #3a7ca5; }
+        .pub-list { list-style: none; }
+        .pub-list li { font-size: .88rem; padding: 8px 0; border-bottom: 1px solid #edf2f7; }
+        .pub-list li:last-child { border-bottom: none; }
+        .award-list { list-style: none; }
+        .award-list li { font-size: .9rem; padding: 6px 0 6px 22px; position: relative; }
+        .award-list li::before { content: "\2605"; position: absolute; left: 0; top: 6px; color: #e6b422; font-size: .75rem; }
+        .contact-inner { display: flex; flex-wrap: wrap; gap: 24px; font-size: .93rem; }
+        .contact-inner span { display: inline-flex; align-items: center; gap: 6px; }
+        footer { text-align: center; padding: 20px; font-size: .82rem; color: #a0aec0; border-top: 1px solid #edf2f7; }
+        @media (max-width: 600px) {
+            .header-inner { flex-direction: column; text-align: center; }
+            .header-text .tags { justify-content: center; }
+            .proj-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <img class="avatar" src="证件照%20.jpeg" alt="李红领">
+            <div class="header-text">
+                <h1>李红领</h1>
+                <p class="subtitle">地球物理勘探工程师 · 人工智能应用工程师</p>
+                <div class="tags">
+                    <span class="tag">地球物理</span>
+                    <span class="tag">人工智能</span>
+                    <span class="tag">大地电磁测深</span>
+                    <span class="tag">瞬变电磁法</span>
+                    <span class="tag">电阻率法</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card about">
+            <h2>关于我</h2>
+            <p>我是一名地球物理勘探工程师、人工智能应用工程师，具有长期的地球物理勘探经验，对大地电磁测深、瞬变电磁法和电阻率法有深刻认识。数据处理和人工智能也属于我的研究方向，擅长应用人工智能解决实际问题。</p>
+        </section>
+
+        <section class="card">
+            <h2>教育与工作经历</h2>
+            <div class="timeline">
+                <div class="tl-item"><div class="tl-time">2023年10月 ~ 至今</div><div class="tl-desc">河南省地质局地质灾害防治中心 — 地球物理勘探工程师</div></div>
+                <div class="tl-item"><div class="tl-time">2019年7月 ~ 2023年10月</div><div class="tl-desc">烟台艾睿光电科技有限公司 — 算法工程师</div></div>
+                <div class="tl-item"><div class="tl-time">2016年9月 ~ 2019年6月</div><div class="tl-desc">中科院地质与地球物理研究所 — 固体地球物理学 硕士</div></div>
+                <div class="tl-item"><div class="tl-time">2012年9月 ~ 2016年6月</div><div class="tl-desc">中南大学 — 地球信息科学与技术 学士</div></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>项目经历</h2>
+            <div class="proj-list">
+                <div class="proj-item">1. 深部矿床定位动力学机制数值模拟项目</div>
+                <div class="proj-item">2. 青岛蓝色硅谷地热资源调查及综合开发利用项目</div>
+                <div class="proj-item">3. 陕西省凤县老湾沟金矿成矿规律与找矿预测项目</div>
+                <div class="proj-item">4. 陕西省华阴市华阳川铀铌铅多金属矿成矿规律与找矿预测项目</div>
+                <div class="proj-item">5. 蒙古国石墨多金属矿区成矿规律与找矿预测项目</div>
+                <div class="proj-item">6. 综合物探方法在深覆盖区地层及构造划分中的应用研究——以郑州东部新城区为例</div>
+                <div class="proj-item">7. 河南省舞阳县大周庄岩盐矿厂区四周地下卤水输送管道探测工程</div>
+                <div class="proj-item">8. 迭部县生态康养温泉酒店及水上乐园建设项目地热井地球物理勘探项目</div>
+                <div class="proj-item">9. 濮阳市采油区农用地土壤污染状况调查（第二年度）</div>
+                <div class="proj-item">10. 平顶山市垃圾处理场（土寨沟）地下水环境状况详细调查及风险评估项目</div>
+                <div class="proj-item">11. 承压地下水隔水顶板重建效果评价研究项目</div>
+                <div class="proj-item">12. 济源市坡头镇、承留镇、轵城镇精细化地质灾害风险调查项目</div>
+                <div class="proj-item">13. 平顶山市卫东区东高皇街道、光华路街道精细化地质灾害风险调查项目</div>
+                <div class="proj-item">14. 河南宏基煤业有限公司煤矿采空区调查项目</div>
+                <div class="proj-item">15. 禹州市无梁镇井李村突发地面塌陷应急调查项目</div>
+                <div class="proj-item">16. 卢氏县双龙湾镇历史遗留固体废渣物探勘查项目</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>论文与专利</h2>
+            <ul class="pub-list">
+                <li>[1] 毕天兴,陈伟强,王光杰,等. 基于内蒙古AMT勘探"死频带"分析[C]// 中国地球物理学会. 2024年中国地球科学联合学术年会论文集. 北京伯通电子出版社, 2024:28-29. DOI:10.26914/c.cnkihy.2024.085771.</li>
+                <li>[2] 李红领,王光杰,杨磊,等. 基于蒙古东戈壁AMT数据的"死频带"分析[J]. 地球物理学进展, 2020, 35(6):2153-2158.</li>
+                <li>[3] 周超,王光杰,李红领,等. 花岗岩地区深部地热构造电磁法探测研究——以福建龙海地区为例[J]. 地球物理学进展, 2019, 34(3):1153-1158.</li>
+                <li>[4] 严小丽,康慧敏,王光杰,等. AMT方法在鳌山卫花岗岩地区深部地热构造勘探中的应用[J]. 地球物理学进展, 2019, 34(5):1945-1953.</li>
+                <li>[5] 何国丽,王光杰,周超,等. 音频大地电磁法在探测地下水中的应用——以湛江南木水为例[J]. 地球物理学进展, 2019, 34(1):304-309.</li>
+                <li>[6] CN116543022A 气体红外图像处理方法、气体检漏仪及存储介质</li>
+                <li>[7] CN111539902B 一种图像处理方法、系统、设备及计算机可读存储介质</li>
+                <li>[8] CN112484861A 一种红外测温方法、装置、设备及存储介质</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>获奖情况</h2>
+            <ul class="award-list">
+                <li>地质灾害防治和生态保护修复协会科技进步奖一等奖（2025年）</li>
+                <li>地质灾害防治和生态保护修复协会优秀成果二等奖（2025年）</li>
+                <li>地质灾害防治和生态保护修复协会科学技术奖一等奖（2024年）</li>
+                <li>地质灾害防治和生态保护修复协会科学技术奖二等奖（2024年）</li>
+                <li>中南大学优秀毕业生（2016年）</li>
+                <li>中南大学优秀学生（2014年）</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>联系方式</h2>
+            <div class="contact-inner">
+                <span>&#x1F4DE; (+86) 188-1115-2529</span>
+                <span>&#x1F4E7; 553961524@qq.com</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 李红领</footer>
+</body>
+</html>
